@@ -1,0 +1,26 @@
+## HOW TO INSTALL ON LINUX 32-bit or 64-bit ##
+
+Compiled versions are available in the bin/linux directory for 32-bit 
+and 64-bit.  Simply copy the appropriate one to your /usr/local/bin or 
+other directory.
+
+If you're not using Linux or they do not work for you, please try 
+compiling.
+
+## HOW TO INSTALL - BY COMPILING ##
+
+1.  Modify Makefile as needed.
+
+2.  Run "make install"
+
+## HOW TO RUN ##
+
+Run "shark" and follow instructions in the provided help.
+
+## USAGE EXAMPLES ##
+
+# Change the channel of the first RadioSHARK device to FM 97.1
+shark -fm 97.1
+
+# Change the channel of the second RadioSHARK device (skip 1) to AM 1500
+shark -am 1500 1

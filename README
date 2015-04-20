@@ -1,0 +1,15 @@
+## GENERAL INFO ##
+
+This program provides command-line control access to the RadioSHARK 
+(version 1) USB-based FM/AM radio device.  This product is discontinued 
+but many are still available on the used market.  Information here:
+
+  http://www.griffintechnology.com/products/radioshark
+
+This program was originally written by Michael Rolig (email: 
+michael_rolig@alumni.macalester.edu) and modified by Justin Yunke 
+(email: yunke@productivity.org) to support multiple RadioSHARK devices.
+
+## Special Thanks ##
+
+Thanks to Michael Rolig for his initial effort.

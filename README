@@ -1,15 +1,10 @@
-## GENERAL INFO ##
+This is a quick hacked combo of three different projects. It includes a command line radio shark control app, a python schedule parser, and a podcast feed generator.
+  
+More info about the command line client can be found here: http://javier.rodriguez.org.mx/index.php/2006/06/10/griffin-radio-shark-icecast2-on-debian-gnulinux
 
-This program provides command-line control access to the RadioSHARK 
-(version 1) USB-based FM/AM radio device.  This product is discontinued 
-but many are still available on the used market.  Information here:
+I only updated the Makefile to compile on Ubuntu 14.04. The orginal README states a Public Domain licence.
 
-  http://www.griffintechnology.com/products/radioshark
+The python schedule parser contains some of my small changes to the orginal repo that can be found here: https://github.com/KenKundert/radioshark/ No license is stated.
 
-This program was originally written by Michael Rolig (email: 
-michael_rolig@alumni.macalester.edu) and modified by Justin Yunke 
-(email: yunke@productivity.org) to support multiple RadioSHARK devices.
+All other code is licensed under CC0 (https://wiki.creativecommons.org/CC0) license.
 
-## Special Thanks ##
-
-Thanks to Michael Rolig for his initial effort.

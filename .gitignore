@@ -31,6 +31,11 @@
 # Debug files
 *.dSYM/
 
+*.pyc
+
 *~
 bin/
 shark
+postRec.sh
+schedule.csv
+out/

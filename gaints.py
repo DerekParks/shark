@@ -4,7 +4,7 @@ My changes to: https://github.com/KenKundert/radioshark/gaints.py
 
 import os, sys
 from fileutils import makePath, expandPath, execute, ExecuteError, remove, mkdir
-SHARK_EXE = "/usr/bin/sudo ./shark"
+SHARK_EXE = "./shark"
 RecordingDurationSec = 3600 * 4
 SharkAudioAddr="hw:1,0"
 SharkCtrlAddr=0

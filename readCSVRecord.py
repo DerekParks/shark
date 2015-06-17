@@ -58,7 +58,6 @@ class AllGames:
       for row in csvReader:
         yield GameData(row, self.stationRegx)
 
-
 def ensure_dir(f):
   d = os.path.dirname(f)
   if not os.path.exists(d):

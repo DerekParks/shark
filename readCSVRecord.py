@@ -82,5 +82,6 @@ if __name__ == "__main__":
     if game.startDateTimeEST > now and game.isOnStation:
       scheduler.enterabs(time.mktime(game.startDateTime.timetuple()), priority, record, (outPath, station, game, "mp3"))
       priority = priority + 1
+  print "Next game", scheduler.queue[0]
   scheduler.run()
   

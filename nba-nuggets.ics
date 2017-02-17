@@ -1,0 +1,1646 @@
+BEGIN:VCALENDAR
+NAME:Nuggets
+X-WR-CALNAME:Nuggets
+VERSION:2.0
+PRODID:-//Stanza //Stanza Calendar v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Raptors
+END:VALARM
+DTSTART:20161004T010000Z
+DTEND:20161004T033000Z
+UID:lWdt3yqdzXygRCHm9Ao4NepG@stanza.co
+SUMMARY:Nuggets at Raptors
+DESCRIPTION:Nuggets at Raptors\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Scotiabank Saddledome\, Calgary\, Alberta\, AB
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Lakers
+END:VALARM
+DTSTART:20161008T023000Z
+DTEND:20161008T050000Z
+UID:pj1dvUxzNucxzuVa3Jss9G_M@stanza.co
+SUMMARY:Nuggets at Lakers
+DESCRIPTION:Watch live on: NBATV\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Staples Center\, Los Angeles\, CA
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Lakers
+END:VALARM
+DTSTART:20161010T013000Z
+DTEND:20161010T040000Z
+UID:knccmKPdXX6oCsikuFkQ4IJy@stanza.co
+SUMMARY:Nuggets at Lakers
+DESCRIPTION:Watch live on: NBATV\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Citizens Business Bank Arena\, Ontario\, CA
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Timberwolves
+END:VALARM
+DTSTART:20161013T000000Z
+DTEND:20161013T023000Z
+UID:ZvSx55EKEwJfEZUW9E2ih-Qq@stanza.co
+SUMMARY:Nuggets at Timberwolves
+DESCRIPTION:Nuggets at Timberwolves\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pinnacle Bank Arena\, Lincoln\, NE
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Warriors
+END:VALARM
+DTSTART:20161015T010000Z
+DTEND:20161015T033000Z
+UID:PPAqp67y-opubrocUVbfDcWn@stanza.co
+SUMMARY:Nuggets vs. Warriors
+DESCRIPTION:Nuggets vs. Warriors\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Trail Blazers
+END:VALARM
+DTSTART:20161017T010000Z
+DTEND:20161017T033000Z
+UID:AqcCcBb1zJ-HIk14IgkdKFO1@stanza.co
+SUMMARY:Nuggets at Trail Blazers
+DESCRIPTION:Watch live on: NBATV\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Moda Center\, Portland\, OR
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Thunder
+END:VALARM
+DTSTART:20161019T000000Z
+DTEND:20161019T023000Z
+UID:uzuYBIo3GzCpMuZd9aMPFWWW@stanza.co
+SUMMARY:Nuggets at Thunder
+DESCRIPTION:Nuggets at Thunder\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Chesapeake Energy Arena\, Oklahoma City\, OK
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Mavericks
+END:VALARM
+DTSTART:20161022T010000Z
+DTEND:20161022T033000Z
+UID:X3yUZikcT8XXGkBgIM41LROy@stanza.co
+SUMMARY:Nuggets vs. Mavericks
+DESCRIPTION:Nuggets vs. Mavericks\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Pelicans
+END:VALARM
+DTSTART:20161027T000000Z
+DTEND:20161027T023000Z
+UID:xRWILyZ06ilhKe1TlcWpysfa@stanza.co
+SUMMARY:Nuggets at Pelicans
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Smoothie King Center\, New Orleans\, LA
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Trail Blazers
+END:VALARM
+DTSTART:20161030T010000Z
+DTEND:20161030T033000Z
+UID:aq07Pf1WhgLYkrWucE7y7GXA@stanza.co
+SUMMARY:Nuggets vs. Trail Blazers
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Raptors
+END:VALARM
+DTSTART:20161031T233000Z
+DTEND:20161101T020000Z
+UID:iYyWJgLuikpj9-saw6nD3iJh@stanza.co
+SUMMARY:Nuggets at Raptors
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Air Canada Centre\, Toronto\, ON
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Timberwolves
+END:VALARM
+DTSTART:20161104T000000Z
+DTEND:20161104T023000Z
+UID:nA_lTUHvvAzl-kUNwdugcByM@stanza.co
+SUMMARY:Nuggets at Timberwolves
+DESCRIPTION:Watch live on: Altitude2\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Target Center\, Minneapolis\, MN
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Pistons
+END:VALARM
+DTSTART:20161105T230000Z
+DTEND:20161106T013000Z
+UID:Cyia0ssD5iS_Lus4AEQSBPI3@stanza.co
+SUMMARY:Nuggets at Pistons
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Palace of Auburn Hills\, Detroit\, MI
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Celtics
+END:VALARM
+DTSTART:20161107T003000Z
+DTEND:20161107T030000Z
+UID:pc6Bz3ml-W6ofIrkV7UWhUnp@stanza.co
+SUMMARY:Nuggets at Celtics
+DESCRIPTION:Watch live on: Altitude2\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:TD Garden\, Boston\, MA
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Grizzlies
+END:VALARM
+DTSTART:20161109T010000Z
+DTEND:20161109T033000Z
+UID:deYGwH9GOHo7qEAPsQjEK6d6@stanza.co
+SUMMARY:Nuggets at Grizzlies
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:FedExForum\, Memphis\, TN
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Warriors
+END:VALARM
+DTSTART:20161111T020000Z
+DTEND:20161111T043000Z
+UID:bZap80LawMGSTPDfGvKcW4WS@stanza.co
+SUMMARY:Nuggets vs. Warriors
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Pistons
+END:VALARM
+DTSTART:20161113T020000Z
+DTEND:20161113T043000Z
+UID:Sk5jlzhMNoI46L0zq6h-dcWS@stanza.co
+SUMMARY:Nuggets vs. Pistons
+DESCRIPTION:Watch live on: NBATV, Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Trail Blazers
+END:VALARM
+DTSTART:20161114T020000Z
+DTEND:20161114T043000Z
+UID:SF1rIY7ixp1m779hiAqcovI1@stanza.co
+SUMMARY:Nuggets at Trail Blazers
+DESCRIPTION:Watch live on: Altitude2\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Moda Center\, Portland\, OR
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Suns
+END:VALARM
+DTSTART:20161117T020000Z
+DTEND:20161117T043000Z
+UID:rXg7pW4LChyZw4rjs_6S9S07@stanza.co
+SUMMARY:Nuggets vs. Suns
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Raptors
+END:VALARM
+DTSTART:20161119T020000Z
+DTEND:20161119T043000Z
+UID:wVhZsnACjy0buaGmVJXBuKsQ@stanza.co
+SUMMARY:Nuggets vs. Raptors
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Jazz
+END:VALARM
+DTSTART:20161121T020000Z
+DTEND:20161121T043000Z
+UID:tI3-3U-UP6FCEWoFzyzZ7ghJ@stanza.co
+SUMMARY:Nuggets vs. Jazz
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Bulls
+END:VALARM
+DTSTART:20161123T020000Z
+DTEND:20161123T043000Z
+UID:nu10-A2DDfx4BCacz9H3JxWa@stanza.co
+SUMMARY:Nuggets vs. Bulls
+DESCRIPTION:Watch live on: NBATV, Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Jazz
+END:VALARM
+DTSTART:20161124T020000Z
+DTEND:20161124T043000Z
+UID:SPgsfso8R-eCNenM2FT_BAIt@stanza.co
+SUMMARY:Nuggets at Jazz
+DESCRIPTION:Watch live on: Altitude2\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Vivint Smart Home Arena\, Salt Lake City\, UT
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Thunder
+END:VALARM
+DTSTART:20161126T020000Z
+DTEND:20161126T043000Z
+UID:srlfjPJvu0NB3DjFldst5vAF@stanza.co
+SUMMARY:Nuggets vs. Thunder
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Suns
+END:VALARM
+DTSTART:20161127T203000Z
+DTEND:20161127T230000Z
+UID:zUDDZUtNBMjbuqrrSGIeXw3A@stanza.co
+SUMMARY:Nuggets at Suns
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Talking Stick Resort Arena\, Phoenix\, AZ
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Heat
+END:VALARM
+DTSTART:20161201T020000Z
+DTEND:20161201T043000Z
+UID:GdCG6GRxBJbeTJx93RoqzJX1@stanza.co
+SUMMARY:Nuggets vs. Heat
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Rockets
+END:VALARM
+DTSTART:20161203T033000Z
+DTEND:20161203T060000Z
+UID:MKRpsS9ID4Hz6TBPy3Qkq-Cv@stanza.co
+SUMMARY:Nuggets vs. Rockets
+DESCRIPTION:Watch live on: ESPN, Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Jazz
+END:VALARM
+DTSTART:20161204T020000Z
+DTEND:20161204T043000Z
+UID:8XbfJ4BcEQkD7owB8ojrjs7k@stanza.co
+SUMMARY:Nuggets at Jazz
+DESCRIPTION:Watch live on: NBATV, Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Vivint Smart Home Arena\, Salt Lake City\, UT
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at 76ers
+END:VALARM
+DTSTART:20161206T000000Z
+DTEND:20161206T023000Z
+UID:J_MDZEO0Z1GEoolbxc8bymmE@stanza.co
+SUMMARY:Nuggets at 76ers
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Wells Fargo Center\, Philadelphia\, PA
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Nets
+END:VALARM
+DTSTART:20161208T003000Z
+DTEND:20161208T030000Z
+UID:Ts0_OZHCpvsYvxua2IBPUw2B@stanza.co
+SUMMARY:Nuggets at Nets
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Barclays Center\, Brooklyn\, NY
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Wizards
+END:VALARM
+DTSTART:20161209T000000Z
+DTEND:20161209T023000Z
+UID:iMt9QZ2THXas89gr7m6zU1p2@stanza.co
+SUMMARY:Nuggets at Wizards
+DESCRIPTION:Watch live on: Altitude2\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Verizon Center\, Washington\, DC
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Magic
+END:VALARM
+DTSTART:20161211T000000Z
+DTEND:20161211T023000Z
+UID:JrkNbZdQ66y23vV-0naywypv@stanza.co
+SUMMARY:Nuggets at Magic
+DESCRIPTION:Watch live on: Altitude2\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Amway Center\, Orlando\, FL
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Mavericks
+END:VALARM
+DTSTART:20161213T013000Z
+DTEND:20161213T040000Z
+UID:KLNkXA9AuAwdpHDMT0am_LFd@stanza.co
+SUMMARY:Nuggets at Mavericks
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:American Airlines Center\, Dallas\, TX
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Trail Blazers
+END:VALARM
+DTSTART:20161216T020000Z
+DTEND:20161216T043000Z
+UID:yfPUgq8R7GFd6ARE6wqut6J3@stanza.co
+SUMMARY:Nuggets vs. Trail Blazers
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Knicks
+END:VALARM
+DTSTART:20161218T020000Z
+DTEND:20161218T043000Z
+UID:YQSKdis0jgSAv-ZS1HSmaJsd@stanza.co
+SUMMARY:Nuggets vs. Knicks
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Mavericks
+END:VALARM
+DTSTART:20161220T020000Z
+DTEND:20161220T043000Z
+UID:R2zX6o9Lx-emedlnYG5qJK3n@stanza.co
+SUMMARY:Nuggets vs. Mavericks
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Clippers
+END:VALARM
+DTSTART:20161221T033000Z
+DTEND:20161221T060000Z
+UID:Cr8ZKueu1SZqKyrSpikOkIlz@stanza.co
+SUMMARY:Nuggets at Clippers
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KWOF 92.5 FM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Staples Center\, Los Angeles\, CA
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Hawks
+END:VALARM
+DTSTART:20161224T020000Z
+DTEND:20161224T043000Z
+UID:34sg3BWr3K_rfjuM7grG0NGy@stanza.co
+SUMMARY:Nuggets vs. Hawks
+DESCRIPTION:Watch live on: Altitude2\n\nListen live on: KWOF 92.5 FM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Clippers
+END:VALARM
+DTSTART:20161227T033000Z
+DTEND:20161227T060000Z
+UID:0-wREWBXKtMSyeeagdlRNQbU@stanza.co
+SUMMARY:Nuggets at Clippers
+DESCRIPTION:Watch live on: NBATV, Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Staples Center\, Los Angeles\, CA
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Timberwolves
+END:VALARM
+DTSTART:20161229T020000Z
+DTEND:20161229T043000Z
+UID:rmwGd8QWmAkkrVKUmWxgZUJ6@stanza.co
+SUMMARY:Nuggets vs. Timberwolves
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. 76ers
+END:VALARM
+DTSTART:20161231T020000Z
+DTEND:20161231T043000Z
+UID:e_cc8iTfmcZJXpHvGqAU79_n@stanza.co
+SUMMARY:Nuggets vs. 76ers
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Warriors
+END:VALARM
+DTSTART:20170103T033000Z
+DTEND:20170103T060000Z
+UID:NR0PmmKMvIUgEURSdK3e9eNu@stanza.co
+SUMMARY:Nuggets at Warriors
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KWOF 92.5 FM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Oracle Arena\, Oakland\, CA
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Kings
+END:VALARM
+DTSTART:20170104T020000Z
+DTEND:20170104T043000Z
+UID:wEJ9CYV-ZlzZ-TVpy9Lrw_2O@stanza.co
+SUMMARY:Nuggets vs. Kings
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Spurs
+END:VALARM
+DTSTART:20170106T020000Z
+DTEND:20170106T043000Z
+UID:EtaWjVrjVQg9iZX4UhX1U5HS@stanza.co
+SUMMARY:Nuggets vs. Spurs
+DESCRIPTION:Listen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Get awesome seats for the upcoming game! Click to be there https://stza.co/+nRDl-T
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Thunder
+END:VALARM
+DTSTART:20170108T010000Z
+DTEND:20170108T033000Z
+UID:6CYDJ6ACO4P1VtbqtwDVrQV4@stanza.co
+SUMMARY:Nuggets at Thunder
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Chesapeake Energy Arena\, Oklahoma City\, OK
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Pacers
+END:VALARM
+DTSTART:20170112T200000Z
+DTEND:20170112T223000Z
+UID:9gZpuQG0MPL0fGFk25ka4o_6@stanza.co
+SUMMARY:Nuggets vs. Pacers
+DESCRIPTION:Watch live on: NBATV, Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Get awesome seats for the upcoming game! Click to be there https://stza.co/+nRDo-2H
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Magic
+END:VALARM
+DTSTART:20170116T220000Z
+DTEND:20170117T003000Z
+UID:8EwtS6WZAr2e13tR5hHX2Hm1@stanza.co
+SUMMARY:Nuggets vs. Magic
+DESCRIPTION:Watch live on: NBATV, Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Get awesome seats for the upcoming game! Click to be there https://stza.co/+nRDq-1n
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Lakers
+END:VALARM
+DTSTART:20170118T033000Z
+DTEND:20170118T060000Z
+UID:PZmvX5vRiHzLkZ95az_yFQsk@stanza.co
+SUMMARY:Nuggets at Lakers
+DESCRIPTION:Watch live on: NBATV, Altitude\n\nListen live on: KWOF 92.5 FM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Staples Center\, Los Angeles\, CA
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Spurs
+END:VALARM
+DTSTART:20170120T013000Z
+DTEND:20170120T040000Z
+UID:jcf570KqEh8d2CwSM-WW2uzr@stanza.co
+SUMMARY:Nuggets at Spurs
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:AT&T Center\, San Antonio\, TX
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Clippers
+END:VALARM
+DTSTART:20170122T020000Z
+DTEND:20170122T043000Z
+UID:G9wVm3ZRd6ch8sn7fhD3aqLI@stanza.co
+SUMMARY:Nuggets vs. Clippers
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Get awesome seats for the upcoming game! Click to be there https://stza.co/+nRDu-1G
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Timberwolves
+END:VALARM
+DTSTART:20170123T000000Z
+DTEND:20170123T023000Z
+UID:6T5JRyDK6ethVflXS4uiEzHh@stanza.co
+SUMMARY:Nuggets at Timberwolves
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Target Center\, Minneapolis\, MN
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Jazz
+END:VALARM
+DTSTART:20170125T020000Z
+DTEND:20170125T043000Z
+UID:42iEa17IRK5zDah3EBM5uLgZ@stanza.co
+SUMMARY:Nuggets vs. Jazz
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Get awesome seats for the upcoming game! Click to be there https://stza.co/+nRDx-12
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Suns
+END:VALARM
+DTSTART:20170127T020000Z
+DTEND:20170127T043000Z
+UID:I8_9E-zpVteIS2rftt7THDxr@stanza.co
+SUMMARY:Nuggets vs. Suns
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Tickets are still available for tonight's game! Click here to grab seats https://stza.co/+nRDz-1N
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Suns
+END:VALARM
+DTSTART:20170129T020000Z
+DTEND:20170129T043000Z
+UID:6d3MxIW-LrLQWLjpqNB095YI@stanza.co
+SUMMARY:Nuggets at Suns
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Talking Stick Resort Arena\, Phoenix\, AZ
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Lakers
+END:VALARM
+DTSTART:20170201T033000Z
+DTEND:20170201T060000Z
+UID:roMsD1KVefs1C82Gfvb6RUAH@stanza.co
+SUMMARY:Nuggets at Lakers
+DESCRIPTION:Watch live on: Altitude2\n\nListen live on: KWOF 92.5 FM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Staples Center\, Los Angeles\, CA
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Grizzlies
+END:VALARM
+DTSTART:20170202T020000Z
+DTEND:20170202T043000Z
+UID:cIL6C8JbIHiWZtrSa0vqsCsD@stanza.co
+SUMMARY:Nuggets vs. Grizzlies
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nRDD-1y\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Get awesome seats for the upcoming game! Click to be there https://stza.co/+nRDD-1y
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Bucks
+END:VALARM
+DTSTART:20170204T020000Z
+DTEND:20170204T043000Z
+UID:-xAK9qyCIUfbhDdFVaOKXMER@stanza.co
+SUMMARY:Nuggets vs. Bucks
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nRDF-1F\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Get awesome seats for the upcoming game! Click to be there https://stza.co/+nRDF-1F
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Spurs
+END:VALARM
+DTSTART:20170205T020000Z
+DTEND:20170205T043000Z
+UID:CkY0EEiJxMmik7G5TnAL0pym@stanza.co
+SUMMARY:Nuggets at Spurs
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:AT&T Center\, San Antonio\, TX
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Mavericks
+END:VALARM
+DTSTART:20170207T020000Z
+DTEND:20170207T043000Z
+UID:QjTmb5n73mKiekjwBSYE-W_d@stanza.co
+SUMMARY:Nuggets vs. Mavericks
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nRDI-3e\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Get awesome seats for the upcoming game! Click to be there https://stza.co/+nRDI-3e
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Hawks
+END:VALARM
+DTSTART:20170209T003000Z
+DTEND:20170209T030000Z
+UID:CajjE9AFFKYu4iZQk0lQP1YI@stanza.co
+SUMMARY:Nuggets at Hawks
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Philips Arena\, Atlanta\, GA
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Knicks
+END:VALARM
+DTSTART:20170211T003000Z
+DTEND:20170211T030000Z
+UID:5fjNZDmP3yVwuChM1qvpek3x@stanza.co
+SUMMARY:Nuggets at Knicks
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Madison Square Garden\, New York\, NY
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Cavaliers
+END:VALARM
+DTSTART:20170212T003000Z
+DTEND:20170212T030000Z
+UID:14svR0Olf-77IwfDTQuKNVbY@stanza.co
+SUMMARY:Nuggets at Cavaliers
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KWOF 92.5 FM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Quicken Loans Arena\, Cleveland\, OH
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Warriors
+END:VALARM
+DTSTART:20170214T020000Z
+DTEND:20170214T043000Z
+UID:vZDqdWhjj78h-y-2CYrN45rB@stanza.co
+SUMMARY:Nuggets vs. Warriors
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nRDN-3b\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Get awesome seats for the upcoming game! Click to be there https://stza.co/+nRDN-3b
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT240M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Timberwolves
+END:VALARM
+DTSTART:20170216T020000Z
+DTEND:20170216T043000Z
+UID:YNziyzvf8jh2Fu7U7ucDqRbJ@stanza.co
+SUMMARY:Nuggets vs. Timberwolves
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nRDP-3W\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Get awesome seats for the upcoming game! Click to be there https://stza.co/+nRDP-3W
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:66th NBA All-Star Game
+END:VALARM
+DTSTART:20170220T010000Z
+DTEND:20170220T040000Z
+UID:Ld2XxzMJkvyoDa79Mbw12osX@stanza.co
+SUMMARY:66th NBA All-Star Game
+DESCRIPTION:66th NBA All-Star Game\n\nWatch the game live on TNT or stream here: https://stza.co/+p7xj-3A\n\nBuy NBA All-Star Gear: https://stza.co/+p7xj-N\n\nSubscribe to NBA Top Game of the Day: https://stza.co/+p7xj-2s\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Watch the game live on TNT or stream here: http://bit.ly/2diHlgQ
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Kings
+END:VALARM
+DTSTART:20170224T033000Z
+DTEND:20170224T060000Z
+UID:c2UAQwB6cDBr5Ix0_zg_s-kp@stanza.co
+SUMMARY:Nuggets at Kings
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KWOF 92.5 FM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Golden 1 Center\, Sacramento\, CA
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Nets
+END:VALARM
+DTSTART:20170225T020000Z
+DTEND:20170225T043000Z
+UID:xdZh-QajDFUNmElCOTrh1LVt@stanza.co
+SUMMARY:Nuggets vs. Nets
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nRDS-2G\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Grizzlies
+END:VALARM
+DTSTART:20170226T220000Z
+DTEND:20170227T003000Z
+UID:QdLgNB7XwHXoaJ5dxJLn1hkQ@stanza.co
+SUMMARY:Nuggets vs. Grizzlies
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nRDU-3S\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Bulls
+END:VALARM
+DTSTART:20170301T010000Z
+DTEND:20170301T033000Z
+UID:WHXGsvM2MjgfqjguPSvXpbnM@stanza.co
+SUMMARY:Nuggets at Bulls
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KWOF 92.5 FM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:United Center\, Chicago\, IL
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Bucks
+END:VALARM
+DTSTART:20170302T010000Z
+DTEND:20170302T033000Z
+UID:VFTB7WSz0t8DtWWyeTXOEA4Y@stanza.co
+SUMMARY:Nuggets at Bucks
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:BMO Harris Bradley Center\, Milwaukee\, WI
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Hornets
+END:VALARM
+DTSTART:20170305T020000Z
+DTEND:20170305T043000Z
+UID:Yxs9MzQ6Ui-RIhZZwxB7ILCM@stanza.co
+SUMMARY:Nuggets vs. Hornets
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KWOF 92.5 FM\n\nFind Tickets https://stza.co/+nRDY-1Q\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Kings
+END:VALARM
+DTSTART:20170307T020000Z
+DTEND:20170307T043000Z
+UID:Bh86bJtCVmbpiFwYlQCRw-Gk@stanza.co
+SUMMARY:Nuggets vs. Kings
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nRD_-1b\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Wizards
+END:VALARM
+DTSTART:20170309T020000Z
+DTEND:20170309T043000Z
+UID:5YFVQrurvZUaks7YMUDmG3eN@stanza.co
+SUMMARY:Nuggets vs. Wizards
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nRE0-2m\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Celtics
+END:VALARM
+DTSTART:20170311T020000Z
+DTEND:20170311T043000Z
+UID:91o6qWmCCL1S9_SgdmLR7n3A@stanza.co
+SUMMARY:Nuggets vs. Celtics
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nRE2-1u\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Kings
+END:VALARM
+DTSTART:20170312T033000Z
+DTEND:20170312T060000Z
+UID:k7fYwUER9HRUDxj4PvtR_aHQ@stanza.co
+SUMMARY:Nuggets at Kings
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Golden 1 Center\, Sacramento\, CA
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Lakers
+END:VALARM
+DTSTART:20170314T023000Z
+DTEND:20170314T050000Z
+UID:rij2IYdHaoqUvhwdVMr9xsFX@stanza.co
+SUMMARY:Nuggets vs. Lakers
+DESCRIPTION:Watch live on: TNT\n\nListen live on: KWOF 92.5 FM\n\nFind Tickets https://stza.co/+nRE5-o\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Clippers
+END:VALARM
+DTSTART:20170317T010000Z
+DTEND:20170317T033000Z
+UID:S31gqg6vhayJzsmv-bxRnQWU@stanza.co
+SUMMARY:Nuggets vs. Clippers
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nRE7-2W\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Rockets
+END:VALARM
+DTSTART:20170319T013000Z
+DTEND:20170319T040000Z
+UID:SkRqydIrZGdhIGUcMqC0MJ57@stanza.co
+SUMMARY:Nuggets vs. Rockets
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nRE9-18\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Rockets
+END:VALARM
+DTSTART:20170321T000000Z
+DTEND:20170321T023000Z
+UID:sGuEzdQnuuanXB7azTwO6sr0@stanza.co
+SUMMARY:Nuggets at Rockets
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Toyota Center\, Houston\, TX
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Cavaliers
+END:VALARM
+DTSTART:20170323T010000Z
+DTEND:20170323T033000Z
+UID:VJyFAtd4qmnxd1rHLgMGU8j7@stanza.co
+SUMMARY:Nuggets vs. Cavaliers
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nREc-1H\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Pacers
+END:VALARM
+DTSTART:20170324T230000Z
+DTEND:20170325T013000Z
+UID:wbFJ3SHT6t_VovfEzWsWCOLf@stanza.co
+SUMMARY:Nuggets at Pacers
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Bankers Life Fieldhouse\, Indianapolis\, IN
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Pelicans
+END:VALARM
+DTSTART:20170327T000000Z
+DTEND:20170327T023000Z
+UID:94iJU4NiUikSHpy2P1DTblrr@stanza.co
+SUMMARY:Nuggets vs. Pelicans
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nREf-39\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Trail Blazers
+END:VALARM
+DTSTART:20170329T020000Z
+DTEND:20170329T043000Z
+UID:iSdqI18rVGoTOha7wJFjmzE1@stanza.co
+SUMMARY:Nuggets at Trail Blazers
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Moda Center\, Portland\, OR
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Hornets
+END:VALARM
+DTSTART:20170331T230000Z
+DTEND:20170401T013000Z
+UID:-g5Wp0l27mEJXQV3gKj1EYyB@stanza.co
+SUMMARY:Nuggets at Hornets
+DESCRIPTION:Watch live on: Altitude2\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Spectrum Center\, Charlotte\, NC
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Heat
+END:VALARM
+DTSTART:20170402T220000Z
+DTEND:20170403T003000Z
+UID:4QNn0NvmymWVLsBxV3sSzKW9@stanza.co
+SUMMARY:Nuggets at Heat
+DESCRIPTION:Watch live on: NBATV, Altitude2\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:AmericanAirlines Arena\, Miami\, FL
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Pelicans
+END:VALARM
+DTSTART:20170405T000000Z
+DTEND:20170405T023000Z
+UID:ZwJ6ugeQuoHq6zJMEWZ3iE7N@stanza.co
+SUMMARY:Nuggets at Pelicans
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Smoothie King Center\, New Orleans\, LA
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Rockets
+END:VALARM
+DTSTART:20170406T000000Z
+DTEND:20170406T023000Z
+UID:9TxYMyspvoR7_L5YtGJsTYr9@stanza.co
+SUMMARY:Nuggets at Rockets
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Toyota Center\, Houston\, TX
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Pelicans
+END:VALARM
+DTSTART:20170408T010000Z
+DTEND:20170408T033000Z
+UID:D48ul7EmfWZwJuZdscYbM2aA@stanza.co
+SUMMARY:Nuggets vs. Pelicans
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nREm-2K\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets vs. Thunder
+END:VALARM
+DTSTART:20170409T210000Z
+DTEND:20170409T233000Z
+UID:xwI_MajzsnCnvWX7OTFcgty6@stanza.co
+SUMMARY:Nuggets vs. Thunder
+DESCRIPTION:Watch live on: Altitude2\n\nListen live on: KKSE 950AM\n\nFind Tickets https://stza.co/+nREo-3i\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Pepsi Center\, Denver\, CO
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Mavericks
+END:VALARM
+DTSTART:20170412T003000Z
+DTEND:20170412T030000Z
+UID:2CzMCn_UTYTUOwMljhGPNM4d@stanza.co
+SUMMARY:Nuggets at Mavericks
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:American Airlines Center\, Dallas\, TX
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+BEGIN:VALARM
+TRIGGER;VALUE=DURATION:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Nuggets at Thunder
+END:VALARM
+DTSTART:20170413T000000Z
+DTEND:20170413T023000Z
+UID:DEVwr4XCARR8AXUl3NYmm5mZ@stanza.co
+SUMMARY:Nuggets at Thunder
+DESCRIPTION:Watch live on: Altitude\n\nListen live on: KKSE 950AM\n\n\n\nSynced via Stanza - create your own live updating calendar (https://stanza.co)\n\nFor questions, check out Stanza’s FAQs page: https://stanza.co/faqs
+LOCATION:Chesapeake Energy Arena\, Oklahoma City\, OK
+STATUS:CONFIRMED
+DTSTAMP:20170217T214714Z
+CREATED:20170217T214714Z
+LAST-MODIFIED:20170217T214714Z
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

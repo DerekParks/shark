@@ -39,24 +39,6 @@ class GameData:
       
   def __repr__(self):
     return "Game: %s %s %s %s" % (self.startDateTime, self.description, self.location, self.isOnStation)
-    
-class AllGames:
-  
-  def __init__(self, path, station):
-    self.path = path
-    self.stationRegx = re.compile(station)
-    
-  def getNextGame(self):
-    now = datetime.now(EST)
-    for game in self.readGames():
-      if game.startDateTimeEST > now and game.isOnStation:
-        return game
-  
-  def readGames(self):
-    with open(self.path, 'rb') as csvfile:
-      csvReader = csv.DictReader(csvfile)
-      for row in csvReader:
-        yield GameData(row, self.stationRegx)
 
 def ensure_dir(f):
   d = os.path.dirname(f)

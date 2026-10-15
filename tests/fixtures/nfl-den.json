@@ -1,0 +1,97 @@
+{
+  "events": [
+    {
+      "id": "401872995",
+      "date": "2026-10-16T00:15Z",
+      "shortName": "SEA @ DEN",
+      "timeValid": true,
+      "competitions": [
+        {
+          "status": {
+            "type": {
+              "name": "STATUS_SCHEDULED"
+            }
+          },
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "abbreviation": "DEN",
+                "shortDisplayName": "Broncos"
+              }
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "abbreviation": "SEA",
+                "shortDisplayName": "Seahawks"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "401873019",
+      "date": "2026-10-25T20:05Z",
+      "shortName": "DEN @ ARI",
+      "timeValid": true,
+      "competitions": [
+        {
+          "status": {
+            "type": {
+              "name": "STATUS_SCHEDULED"
+            }
+          },
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "abbreviation": "ARI",
+                "shortDisplayName": "Cardinals"
+              }
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "abbreviation": "DEN",
+                "shortDisplayName": "Broncos"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "401873157",
+      "date": "2027-01-03T05:00Z",
+      "shortName": "DEN @ NE",
+      "timeValid": false,
+      "competitions": [
+        {
+          "status": {
+            "type": {
+              "name": "STATUS_SCHEDULED"
+            }
+          },
+          "competitors": [
+            {
+              "homeAway": "home",
+              "team": {
+                "abbreviation": "NE",
+                "shortDisplayName": "Patriots"
+              }
+            },
+            {
+              "homeAway": "away",
+              "team": {
+                "abbreviation": "DEN",
+                "shortDisplayName": "Broncos"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

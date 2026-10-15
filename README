@@ -1,10 +1,81 @@
-This is a quick hacked combo of three different projects. It includes a command line radio shark control app, a python schedule parser, and a podcast feed generator.
-  
-More info about the command line client can be found here: http://javier.rodriguez.org.mx/index.php/2006/06/10/griffin-radio-shark-icecast2-on-debian-gnulinux
+Shark records your teams' radio broadcasts with a Griffin RadioSHARK, streams
+games live, and serves the recordings as a podcast.
 
-I only updated the Makefile to compile on Ubuntu 14.04. The orginal README states a Public Domain licence.
+- The schedule service pulls NFL, NHL, NBA and MLB schedules for the teams in
+  teams.toml and merges them by priority: a game that overlaps one from a team
+  listed above it is skipped whole.
+- The recorder tunes the shark and records each scheduled game to MP3, streaming
+  it to Icecast while it records.
+- The web app serves a dashboard, the podcast feed (/feed.xml), the recordings,
+  and the live stream (/live). Every URL it hands out is built from the host the
+  request arrived on, so the same server works on a LAN address, behind a
+  reverse proxy that sets X-Forwarded-Proto, or over Tailscale.
 
-The python schedule parser contains some of my small changes to the orginal repo that can be found here: https://github.com/KenKundert/radioshark/ No license is stated.
 
-All other code is licensed under CC0 (https://wiki.creativecommons.org/CC0) license.
+Running it
+----------
 
+Needs Docker with Compose, a RadioSHARK on USB, and a Linux host whose kernel
+has the radio-shark (or shark2) and snd-usb-audio drivers. Images are built for
+amd64 and arm64 (64-bit Raspberry Pi OS works).
+
+    mkdir shark && cd shark
+    curl -LO https://raw.githubusercontent.com/DerekParks/shark/master/docker-compose.yaml
+    curl -L -o .env https://raw.githubusercontent.com/DerekParks/shark/master/sample.env
+    mkdir config
+    curl -L -o config/teams.toml https://raw.githubusercontent.com/DerekParks/shark/master/teams.example.toml
+
+Edit config/teams.toml (the comments explain each field) and set the passwords
+and TZ in .env, then:
+
+    docker compose up -d
+
+Then open http://<host>:8771. Check the teams file with
+`docker compose run --rm schedule python buildSchedule.py --check --teams=/config/teams.toml`.
+
+Before trusting it with a game, check reception. AM and FM can differ a lot
+depending on where the shark sits:
+
+    docker compose run --rm recorder sh -c 'fm -q 0.85 && arecord -D hw:CARD=RadioSHARK,DEV=0 -d 10 -c 2 -f S16_LE -r 44100 /data/test.wav'
+
+fm takes MHz, so 850 AM is 0.85. Listen to data/test.wav.
+
+
+Configuration
+-------------
+
+config/teams.toml   Teams, stations and priority. See teams.example.toml.
+config/cover.jpg    Optional podcast cover; set SHARK_COVER=/config/cover.jpg.
+.env                Everything else; sample.env lists every setting:
+
+  ICECAST_*_PASSWORD      Icecast passwords (required)
+  COMPOSE_PROFILES        "recorder" to run the recorder (needs the shark)
+  TZ                      Time zone for file names and episode dates (UTC)
+  SHARK_FEED_TITLE        Feed and dashboard title (Shark Sports)
+  SHARK_FEED_DESCRIPTION  Feed description
+  SHARK_FEED_AUTHOR       Feed author (Shark)
+  SHARK_COVER             Cover image path inside the container
+  SHARK_WEB_PORT          Host port for the web app (8771)
+  SHARK_ALSA_DEVICE       Capture device (hw:CARD=RadioSHARK,DEV=0)
+  SHARK_RADIO_DEVICE      Tuner device on the host (/dev/radio0)
+  SHARK_BITRATE           Recording bitrate, kbps (32)
+  SHARK_STREAM_BITRATE    Live stream bitrate, kbps (64)
+  PUID, PGID              User the containers run as (1000)
+  AUDIO_GID, VIDEO_GID    Host groups owning /dev/snd and /dev/radio0 (29, 44)
+  ICECAST_PORT            Icecast admin port on 127.0.0.1 (8770)
+
+Recordings land in data/out as <team>-<date>-<HHMM>.mp3. A game the recorder
+had to rejoin after a restart continues in <team>-<date>-<HHMM>-2.mp3.
+
+
+Development
+-----------
+
+    uv sync
+    uv run pytest
+
+archive/ holds the original command-line RadioSHARK control app. More about it:
+http://javier.rodriguez.org.mx/index.php/2006/06/10/griffin-radio-shark-icecast2-on-debian-gnulinux
+Its original README states a Public Domain licence.
+
+All other code is licensed under CC0 (https://wiki.creativecommons.org/CC0).

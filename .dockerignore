@@ -1,0 +1,7 @@
+*
+!pyproject.toml
+!uv.lock
+!.python-version
+!*.py
+!teams.example.toml
+!cover.jpg

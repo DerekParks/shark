@@ -1,0 +1,51 @@
+# Copy next to a .env (from sample.env) and a config/ directory holding your
+# teams.toml (from teams.example.toml), then `docker compose up -d`.
+x-shark: &shark
+  image: ghcr.io/derekparks/shark:latest
+  restart: unless-stopped
+  user: "${PUID:-1000}:${PGID:-1000}"
+  env_file:
+    - path: .env
+      required: false
+  environment:
+    TZ: ${TZ:-UTC}
+  volumes:
+    - ./data:/data
+    - ./config:/config:ro
+
+services:
+  schedule:
+    <<: *shark
+    command: ["python", "buildSchedule.py", "--teams=/config/teams.toml", "--every=24", "/data/merged.csv"]
+
+  recorder:
+    <<: *shark
+    profiles: [recorder]
+    group_add:
+      - "${AUDIO_GID:-29}"
+      - "${VIDEO_GID:-44}"
+    devices:
+      - /dev/snd:/dev/snd
+      - ${SHARK_RADIO_DEVICE:-/dev/radio0}:/dev/radio0
+    environment:
+      TZ: ${TZ:-UTC}
+      SHARK_ICECAST_URL: icecast://source:${ICECAST_SOURCE_PASSWORD}@icecast:8000/live
+    command: ["python", "readCSVRecord.py", "/data/merged.csv", "/data/out"]
+
+  web:
+    <<: *shark
+    volumes:
+      - ./data:/data:ro
+      - ./config:/config:ro
+    ports:
+      - "${SHARK_WEB_PORT:-8771}:8771"
+
+  icecast:
+    image: docker.io/libretime/icecast:2.4.4
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${ICECAST_PORT:-8770}:8000"
+    environment:
+      ICECAST_SOURCE_PASSWORD: ${ICECAST_SOURCE_PASSWORD}
+      ICECAST_RELAY_PASSWORD: ${ICECAST_RELAY_PASSWORD}
+      ICECAST_ADMIN_PASSWORD: ${ICECAST_ADMIN_PASSWORD}

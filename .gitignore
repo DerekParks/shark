@@ -39,3 +39,8 @@ shark
 postRec.sh
 schedule.csv
 out/
+merged.csv
+.env
+data/
+teams.toml
+config/

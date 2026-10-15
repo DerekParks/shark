@@ -1,0 +1,144 @@
+{
+  "dates": [
+    {
+      "date": "2026-02-20",
+      "games": [
+        {
+          "gamePk": 831959,
+          "gameDate": "2026-02-20T20:10:00Z",
+          "gameType": "S",
+          "status": {
+            "detailedState": "Final",
+            "startTimeTBD": false
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 109,
+                "teamName": "D-backs"
+              }
+            },
+            "home": {
+              "team": {
+                "id": 115,
+                "teamName": "Rockies"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "games": [
+        {
+          "gamePk": 824377,
+          "gameDate": "2026-04-03T20:10:00Z",
+          "gameType": "R",
+          "status": {
+            "detailedState": "Final",
+            "startTimeTBD": false
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 143,
+                "teamName": "Phillies"
+              }
+            },
+            "home": {
+              "team": {
+                "id": 115,
+                "teamName": "Rockies"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-03-27",
+      "games": [
+        {
+          "gamePk": 823893,
+          "gameDate": "2026-03-27T23:10:00Z",
+          "gameType": "R",
+          "status": {
+            "detailedState": "Final",
+            "startTimeTBD": false
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 115,
+                "teamName": "Rockies"
+              }
+            },
+            "home": {
+              "team": {
+                "id": 146,
+                "teamName": "Marlins"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "games": [
+        {
+          "gamePk": 823637,
+          "gameDate": "2026-04-25T20:10:00Z",
+          "gameType": "R",
+          "status": {
+            "detailedState": "Postponed",
+            "startTimeTBD": false
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 115,
+                "teamName": "Rockies"
+              }
+            },
+            "home": {
+              "team": {
+                "id": 121,
+                "teamName": "Mets"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-04-26",
+      "games": [
+        {
+          "gamePk": 823637,
+          "gameDate": "2026-04-26T17:45:00Z",
+          "gameType": "R",
+          "status": {
+            "detailedState": "Final",
+            "startTimeTBD": true
+          },
+          "teams": {
+            "away": {
+              "team": {
+                "id": 115,
+                "teamName": "Rockies"
+              }
+            },
+            "home": {
+              "team": {
+                "id": 121,
+                "teamName": "Mets"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

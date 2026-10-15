@@ -1,0 +1,51 @@
+# Copy to teams.toml (in the container: /config/teams.toml) and list your teams.
+#
+# Order is priority: a game is skipped, whole, if it overlaps any game of a team
+# listed above it.
+#
+# Fields:
+#   name    Shown in titles and file names ("<name> vs. <opponent>").
+#   source  nhl, nfl, nba or mlb.
+#   id      The team's code in that league's schedule:
+#             nhl  abbreviation, e.g. "SEA"   (api-web.nhle.com)
+#             nfl  abbreviation, e.g. "SEA"   (ESPN)
+#             nba  tricode, e.g. "POR", plus slug, the team's nba.com path ("blazers")
+#             mlb  numeric team id, e.g. 136  (statsapi.mlb.com/api/v1/teams?sportId=1)
+#   band    AM or FM.
+#   freq    The station that carries the radio broadcast: kHz for AM, MHz for FM.
+#   hours   How long to record from the scheduled start.
+#
+# The stations below are placeholders; use your local radio broadcaster's.
+
+[[team]]
+name = "Seahawks"
+source = "nfl"
+id = "SEA"
+band = "AM"
+freq = "710"
+hours = 3.5
+
+[[team]]
+name = "Kraken"
+source = "nhl"
+id = "SEA"
+band = "FM"
+freq = "97.3"
+hours = 3
+
+[[team]]
+name = "Trail Blazers"
+source = "nba"
+id = "POR"
+slug = "blazers"
+band = "AM"
+freq = "620"
+hours = 2.5
+
+[[team]]
+name = "Mariners"
+source = "mlb"
+id = 136
+band = "AM"
+freq = "710"
+hours = 3

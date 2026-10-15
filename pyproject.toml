@@ -1,0 +1,27 @@
+[project]
+name = "shark"
+version = "0.2.0"
+description = "Record scheduled radio broadcasts with a Griffin RadioSHARK and publish them as a podcast"
+readme = "README"
+requires-python = ">=3.13"
+dependencies = [
+    "docopt-ng>=0.9",
+    "fastapi>=0.115",
+    "feedgen>=1.0",
+    "httpx2>=2.13.1",
+    "mutagen>=1.47",
+    "python-dateutil>=2.9",
+    "uvicorn>=0.32",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

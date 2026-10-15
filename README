@@ -22,7 +22,7 @@ amd64 and arm64 (64-bit Raspberry Pi OS works).
     mkdir shark && cd shark
     curl -LO https://raw.githubusercontent.com/DerekParks/shark/master/docker-compose.yaml
     curl -L -o .env https://raw.githubusercontent.com/DerekParks/shark/master/sample.env
-    mkdir config
+    mkdir config data
     curl -L -o config/teams.toml https://raw.githubusercontent.com/DerekParks/shark/master/teams.example.toml
 
 Edit config/teams.toml (the comments explain each field) and set the passwords

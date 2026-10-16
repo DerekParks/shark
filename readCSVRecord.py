@@ -74,6 +74,7 @@ def getMp3Command(filename, game):
       'lame'
     , '--quiet'               # quiet
     , '-r'               # raw format input
+    , '-a'                    # downmix to mono
     #, '--resample 8'          # resample to rate
     #, '-V3'                   # ???
     #, '--vbr-new'             # ???
@@ -99,7 +100,7 @@ def getStreamCommand(icecastURL, game):
       'ffmpeg'
     , '-nostdin -loglevel warning'
     , '-f s16le -ar 44100 -ac 2 -i -'  # raw stream from arecord
-    , '-c:a libmp3lame -b:a {bitrate}k'
+    , '-c:a libmp3lame -ac 1 -b:a {bitrate}k'
     , '-content_type audio/mpeg'
     , '-ice_name {title}'
     , '-f mp3 {url}'

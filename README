@@ -58,7 +58,7 @@ config/cover.jpg    Optional podcast cover; set SHARK_COVER=/config/cover.jpg.
   SHARK_WEB_PORT          Host port for the web app (8771)
   SHARK_ALSA_DEVICE       Capture device (hw:CARD=RadioSHARK,DEV=0)
   SHARK_RADIO_DEVICE      Tuner device on the host (/dev/radio0)
-  SHARK_BITRATE           Recording bitrate, kbps (32)
+  SHARK_BITRATE           Recording bitrate, kbps (64)
   SHARK_STREAM_BITRATE    Live stream bitrate, kbps (64)
   PUID, PGID              User the containers run as (1000)
   AUDIO_GID, VIDEO_GID    Host groups owning /dev/snd and /dev/radio0 (29, 44)

@@ -248,5 +248,10 @@ def test_default_bitrates(monkeypatch):
   monkeypatch.delenv("SHARK_BITRATE", raising=False)
   monkeypatch.delenv("SHARK_STREAM_BITRATE", raising=False)
 
-  assert "--preset 32 " in readCSVRecord.getMp3Command("out.mp3", makeGame())
+  assert "--preset 64 " in readCSVRecord.getMp3Command("out.mp3", makeGame())
   assert "-b:a 64k " in readCSVRecord.getStreamCommand("icecast://x", makeGame())
+
+
+def test_recording_and_stream_are_mono():
+  assert " -a " in readCSVRecord.getMp3Command("out.mp3", makeGame())
+  assert " -ac 1 " in readCSVRecord.getStreamCommand("icecast://x", makeGame())

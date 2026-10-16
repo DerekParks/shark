@@ -111,3 +111,27 @@ def test_enclosure_urls_are_escaped(tmpdir, mp3):
   enclosure = render(tmpdir).find("item/enclosure").get("url")
 
   assert enclosure == BASE + "recordings/Trail%20Blazers-2026-10-22-2000.mp3"
+
+
+def test_enhanced_copy_is_served_in_place_of_the_recording(tmpdir, mp3):
+  mp3(tmpdir.join("Broncos-2026-10-15-1815.mp3"), 2, "Broncos at Chiefs", "Broncos")
+  mp3(tmpdir.join("Avalanche-2026-10-16-1900.mp3"), 2, "Avalanche vs. Penguins", "Avalanche")
+  enhanced = tmpdir.mkdir("enhanced")
+  copy = mp3(enhanced.join("Broncos-2026-10-15-1815.mp3"), 3)
+
+  items = ET.fromstring(feed.render(feed.episodes(str(tmpdir), str(enhanced)), BASE)).find("channel").findall("item")
+
+  assert [(i.findtext("title"), i.find("enclosure").get("url"), i.find("enclosure").get("length"), i.findtext(ITUNES + "duration"))
+          for i in items] == [
+    ("Avalanche vs. Penguins (Oct 16, 2026)", BASE + "recordings/Avalanche-2026-10-16-1900.mp3",
+     str(tmpdir.join("Avalanche-2026-10-16-1900.mp3").size()), "2"),
+    ("Broncos at Chiefs (Oct 15, 2026)", BASE + "enhanced/Broncos-2026-10-15-1815.mp3", str(copy.size()), "3"),
+  ]
+  assert [i.findtext("guid") for i in items] == ["Avalanche-2026-10-16-1900.mp3", "Broncos-2026-10-15-1815.mp3"]
+
+
+def test_enhanced_copy_without_its_recording_is_not_an_episode(tmpdir, mp3):
+  enhanced = tmpdir.mkdir("enhanced")
+  mp3(enhanced.join("Broncos-2026-10-15-1815.mp3"), 3)
+
+  assert feed.episodes(str(tmpdir), str(enhanced)) == []

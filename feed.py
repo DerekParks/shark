@@ -1,4 +1,5 @@
-"""Podcast RSS for a directory of game recordings, with every URL under the base URL it was requested from."""
+"""Podcast RSS for a directory of game recordings, serving the enhanced copy of a recording once it exists,
+with every URL under the base URL it was requested from."""
 
 import os, re
 from urllib.parse import quote
@@ -13,28 +14,33 @@ from config import setting
 
 RECORDING_NAME = re.compile(r"^(?P<team>.+)-(?P<stamp>\d{4}-\d{2}-\d{2}-\d{4})(?:-(?P<part>\d+))?$")
 
-def episode(path):
+def served(path, enhanced):
+  copy = Path(enhanced, path.name) if enhanced else None
+  return copy if copy and copy.is_file() else path
+
+def episode(path, enhanced=None):
   match = RECORDING_NAME.match(path.stem)
   start = datetime.strptime(match["stamp"], "%Y-%m-%d-%H%M").astimezone() if match else datetime.fromtimestamp(path.stat().st_mtime).astimezone()
-  audio = MP3(path)
-  tags = audio.tags or {}
+  tags = MP3(path).tags or {}
   name = tags["TIT2"].text[0] if "TIT2" in tags else path.stem
   part = int(match["part"]) if match and match["part"] else 1
+  audio = served(path, enhanced)
   return {
     "file": path.name,
+    "url": ("recordings/" if audio == path else "enhanced/") + quote(path.name),
     "title": "%s (%s)%s" % (name, start.strftime("%b %-d, %Y"), ", part %d" % part if part > 1 else ""),
     "team": tags["TPE1"].text[0] if "TPE1" in tags else (match["team"] if match else ""),
     "start": start,
     "part": part,
-    "bytes": path.stat().st_size,
-    "seconds": round(audio.info.length),
+    "bytes": audio.stat().st_size,
+    "seconds": round(MP3(audio).info.length),
   }
 
-def episodes(directory):
+def episodes(directory, enhanced=None):
   eps = []
   for path in Path(directory).glob("*.mp3") if os.path.isdir(directory) else []:
     try:
-      eps.append(episode(path))
+      eps.append(episode(path, enhanced))
     except MutagenError as err:
       print("Skipping unreadable recording %s: %s" % (path.name, err))
   return sorted(eps, key=lambda e: (e["start"], e["part"]), reverse=True)
@@ -61,6 +67,6 @@ def render(eps, baseURL):
     fe.title(e["title"])
     fe.description(e["team"])
     fe.published(e["start"])
-    fe.enclosure(baseURL + "recordings/" + quote(e["file"]), str(e["bytes"]), "audio/mpeg")
+    fe.enclosure(baseURL + e["url"], str(e["bytes"]), "audio/mpeg")
     fe.podcast.itunes_duration(e["seconds"])
   return fg.rss_str(pretty=True)

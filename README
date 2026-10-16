@@ -49,7 +49,8 @@ config/cover.jpg    Optional podcast cover; set SHARK_COVER=/config/cover.jpg.
 .env                Everything else; sample.env lists every setting:
 
   ICECAST_*_PASSWORD      Icecast passwords (required)
-  COMPOSE_PROFILES        "recorder" to run the recorder (needs the shark)
+  COMPOSE_PROFILES        "recorder" to run the recorder (needs the shark),
+                          "enhance" to clean up recordings; comma-separated
   TZ                      Time zone for file names and episode dates (UTC)
   SHARK_FEED_TITLE        Feed and dashboard title (Shark Sports)
   SHARK_FEED_DESCRIPTION  Feed description
@@ -66,6 +67,14 @@ config/cover.jpg    Optional podcast cover; set SHARK_COVER=/config/cover.jpg.
 
 Recordings land in data/out as <team>-<date>-<HHMM>.mp3. A game the recorder
 had to rejoin after a restart continues in <team>-<date>-<HHMM>-2.mp3.
+
+The enhancer cleans up each finished recording into data/enhanced under the same
+name, newest first, and the feed and dashboard serve that copy once it exists.
+It notches out mains hum, reduces noise with DeepFilterNet3 by at most 12 dB, and
+on recordings with no audio above about 12 kHz (AM, or old low-bitrate MP3s)
+regenerates the missing highs with LavaSR v2. The raw recording is kept. It
+runs on the CPU. Enhance a single file with
+`docker compose run --rm enhance python enhance.py <in.mp3> <out.mp3>`.
 
 
 Development

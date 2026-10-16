@@ -17,10 +17,33 @@ dependencies = [
 [dependency-groups]
 dev = [
     "pytest>=8",
+    {include-group = "enhance-core"},
+]
+enhance-core = [
+    "numpy>=2",
+    "scipy>=1.14",
+    "soundfile>=0.13",
+]
+enhance = [
+    {include-group = "enhance-core"},
+    "huggingface-hub>=0.30",
+    "lavasr",
+    "torch==2.9.1",
+    "torchaudio==2.9.1",
 ]
 
 [tool.uv]
 package = false
+
+[tool.uv.sources]
+lavasr = { git = "https://github.com/ysharma3501/LavaSR.git", rev = "33ac040892519c1bb4aed7eb32e79af51cc29e2a" }
+torch = { index = "pytorch-cpu" }
+torchaudio = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -21,7 +21,7 @@ def client(tmpdir, games=(), icecast=None, **kwargs):
     merge.writeCsv(str(schedule), list(games))
   out = tmpdir.ensure("out", dir=True)
   app = web.createApp(str(schedule), str(out), ICECAST, clock=lambda: NOW,
-                      transport=httpx.MockTransport(icecast) if icecast else None)
+                      transport=httpx.MockTransport(icecast) if icecast else None, enhancedDir=str(tmpdir.join("enhanced")))
   return TestClient(app, **kwargs)
 
 
@@ -61,6 +61,22 @@ def test_recordings_support_range_requests_for_seeking(tmpdir, mp3):
 
   assert response.status_code == 206
   assert len(response.content) == 10
+
+
+def test_enhanced_copy_replaces_the_recording_and_seeks(tmpdir, mp3):
+  mp3(tmpdir.mkdir("out").join("Broncos-2026-10-15-1815.mp3"), 1, "Broncos at Chiefs", "Broncos")
+  copy = mp3(tmpdir.mkdir("enhanced").join("Broncos-2026-10-15-1815.mp3"), 2)
+  c = client(tmpdir)
+
+  url = c.get("/api/recordings").json()[0]["url"]
+  enclosure = ET.fromstring(c.get("/feed.xml").content).find("channel/item/enclosure").get("url")
+  response = c.get(url, headers={"Range": "bytes=0-9"})
+
+  assert url == "enhanced/Broncos-2026-10-15-1815.mp3"
+  assert enclosure == "http://testserver/" + url
+  assert response.status_code == 206
+  assert response.content == copy.read_binary()[:10]
+  assert ('src="%s"' % url) in c.get("/").text
 
 
 def test_feed_urls_follow_the_host_it_was_requested_on(tmpdir, mp3):

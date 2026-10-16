@@ -2,7 +2,7 @@
 """Shark web app: what's on air, the live stream, upcoming games, recordings and the podcast feed.
 
 Usage:
-  web.py [--host=<host>] [--port=<port>] [--schedule=<csv>] [--recordings=<dir>] [--icecast=<url>]
+  web.py [--host=<host>] [--port=<port>] [--schedule=<csv>] [--recordings=<dir>] [--enhanced=<dir>] [--icecast=<url>]
 
 Options:
   -h --help            Show this screen.
@@ -10,12 +10,12 @@ Options:
   --port=<port>        Port to bind [default: 8771].
   --schedule=<csv>     Merged schedule [default: merged.csv].
   --recordings=<dir>   Recordings directory [default: out].
+  --enhanced=<dir>     Enhanced copies of the recordings, served in their place [default: enhanced].
   --icecast=<url>      Icecast mount relayed at /live [default: http://127.0.0.1:8770/live].
 """
 
 import html, os
 from datetime import datetime, timezone
-from urllib.parse import quote
 
 import httpx2 as httpx
 from dateutil import parser
@@ -42,10 +42,10 @@ def schedule(path, now):
   games.sort(key=lambda g: g["start"])
   return games[:UPCOMING_LIMIT]
 
-def recordings(directory):
+def recordings(directory, enhanced=None):
   return [{"file": e["file"], "title": e["title"], "team": e["team"], "start": e["start"].isoformat(),
-           "bytes": e["bytes"], "seconds": e["seconds"], "url": "recordings/" + quote(e["file"])}
-          for e in feed.episodes(directory)]
+           "bytes": e["bytes"], "seconds": e["seconds"], "url": e["url"]}
+          for e in feed.episodes(directory, enhanced)]
 
 def localTime(stamp):
   return datetime.fromisoformat(stamp).astimezone().strftime("%a %b %-d, %-I:%M %p")
@@ -86,10 +86,12 @@ ul { list-style: none; padding: 0; }
 <h2>Recordings</h2><p><a href="feed.xml">Podcast feed</a></p><ul>%s</ul>
 </body></html>""" % (title, title, title, hero, rows or "<tr><td>None</td></tr>", items or "<li>None yet</li>")
 
-def createApp(schedulePath, recordingsDir, icecastURL, clock=lambda: datetime.now(timezone.utc), transport=None):
+def createApp(schedulePath, recordingsDir, icecastURL, clock=lambda: datetime.now(timezone.utc), transport=None, enhancedDir=None):
   app = FastAPI(title="Shark")
   app.add_middleware(ProxyHeadersMiddleware, trusted_hosts="*")
   app.mount("/recordings", StaticFiles(directory=recordingsDir, check_dir=False), name="recordings")
+  if enhancedDir:
+    app.mount("/enhanced", StaticFiles(directory=enhancedDir, check_dir=False), name="enhanced")
 
   @app.get("/api/schedule")
   def apiSchedule():
@@ -97,14 +99,14 @@ def createApp(schedulePath, recordingsDir, icecastURL, clock=lambda: datetime.no
 
   @app.get("/api/recordings")
   def apiRecordings():
-    return recordings(recordingsDir)
+    return recordings(recordingsDir, enhancedDir)
 
   @app.api_route("/feed.xml", methods=["GET", "HEAD"])
   @app.api_route("/feed", methods=["GET", "HEAD"])
   @app.api_route("/rss", methods=["GET", "HEAD"])
   @app.api_route("/podcast.xml", methods=["GET", "HEAD"])
   def podcastFeed(request: Request):
-    return Response(feed.render(feed.episodes(recordingsDir), str(request.base_url)), media_type="application/rss+xml")
+    return Response(feed.render(feed.episodes(recordingsDir, enhancedDir), str(request.base_url)), media_type="application/rss+xml")
 
   @app.get("/cover.jpg")
   def cover():
@@ -136,12 +138,12 @@ def createApp(schedulePath, recordingsDir, icecastURL, clock=lambda: datetime.no
 
   @app.get("/", response_class=HTMLResponse)
   def page():
-    return renderPage(schedule(schedulePath, clock()), recordings(recordingsDir))
+    return renderPage(schedule(schedulePath, clock()), recordings(recordingsDir, enhancedDir))
 
   return app
 
 if __name__ == "__main__":
   import uvicorn
   arguments = docopt(__doc__, version='Shark Web 0.2')
-  app = createApp(arguments["--schedule"], arguments["--recordings"], arguments["--icecast"])
+  app = createApp(arguments["--schedule"], arguments["--recordings"], arguments["--icecast"], enhancedDir=arguments["--enhanced"])
   uvicorn.run(app, host=arguments["--host"], port=int(arguments["--port"]), proxy_headers=False)

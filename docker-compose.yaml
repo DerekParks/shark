@@ -32,6 +32,11 @@ services:
       SHARK_ICECAST_URL: icecast://source:${ICECAST_SOURCE_PASSWORD}@icecast:8000/live
     command: ["python", "readCSVRecord.py", "/data/merged.csv", "/data/out"]
 
+  enhance:
+    <<: *shark
+    image: ghcr.io/derekparks/shark-enhance:latest
+    profiles: [enhance]
+
   web:
     <<: *shark
     volumes:

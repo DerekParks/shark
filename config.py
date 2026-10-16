@@ -10,6 +10,7 @@ DEFAULTS = {
   "SHARK_FEED_TITLE": "Shark Sports",
   "SHARK_FEED_DESCRIPTION": "Games recorded off the radio by a Griffin RadioSHARK.",
   "SHARK_FEED_AUTHOR": "Shark",
+  "SHARK_DEEP_FILTER": "deep-filter",
   "SHARK_COVER": os.path.join(os.path.dirname(os.path.abspath(__file__)), "cover.jpg"),
 }
 

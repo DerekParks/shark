@@ -208,7 +208,7 @@ def test_no_stream_without_icecast_url(monkeypatch, tmpdir):
 
 def test_streams_through_relay_between_recorder_and_encoder(monkeypatch, tmpdir):
   commands = captureExecute(monkeypatch)
-  monkeypatch.setenv("SHARK_ICECAST_URL", "icecast://source:pw@127.0.0.1:8765/live")
+  monkeypatch.setenv("SHARK_ICECAST_URL", "icecast://source@127.0.0.1:8765/live")
 
   readCSVRecord.recordGame(str(tmpdir), makeGame(), 600)
 
@@ -217,7 +217,7 @@ def test_streams_through_relay_between_recorder_and_encoder(monkeypatch, tmpdir)
   assert recorder.startswith("arecord ")
   assert relayArgs[1] == readCSVRecord.RELAY
   assert relayArgs[2].startswith("ffmpeg ")
-  assert "icecast://source:pw@127.0.0.1:8765/live" in relayArgs[2]
+  assert "icecast://source@127.0.0.1:8765/live" in relayArgs[2]
   assert encoder.startswith("lame ")
 
 
@@ -255,3 +255,25 @@ def test_default_bitrates(monkeypatch):
 def test_recording_and_stream_are_mono():
   assert " -a " in readCSVRecord.getMp3Command("out.mp3", makeGame())
   assert " -ac 1 " in readCSVRecord.getStreamCommand("icecast://x", makeGame())
+
+
+def test_stream_password_is_read_by_the_shell_and_never_logged(monkeypatch, tmpdir, capsys):
+  monkeypatch.setenv("SHARK_ICECAST_URL", "icecast://source@icecast:8000/live")
+  monkeypatch.setenv("SHARK_ICECAST_PASSWORD", "hunter2")
+  monkeypatch.setattr(readCSVRecord.subprocess, "run", lambda *a, **k: None)
+
+  readCSVRecord.recordGame(str(tmpdir), makeGame(), 600)
+
+  logged = capsys.readouterr().out
+  assert '-password "$SHARK_ICECAST_PASSWORD"' in logged
+  assert "hunter2" not in logged
+
+
+def test_stream_command_passes_the_password_to_ffmpeg(monkeypatch):
+  monkeypatch.setenv("SHARK_ICECAST_PASSWORD", "it's $ecret")
+
+  cmd = readCSVRecord.getStreamCommand("icecast://source@icecast:8000/live", makeGame())
+  args = readCSVRecord.subprocess.run(["bash", "-c", "printf '%s\\n' " + cmd.split(" ", 1)[1]],
+                                      capture_output=True, text=True, check=True).stdout.splitlines()
+
+  assert args[args.index("-password") + 1] == "it's $ecret"

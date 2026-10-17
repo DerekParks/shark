@@ -103,6 +103,7 @@ def getStreamCommand(icecastURL, game):
     , '-c:a libmp3lame -ac 1 -b:a {bitrate}k'
     , '-content_type audio/mpeg'
     , '-ice_name {title}'
+    , '-password "$SHARK_ICECAST_PASSWORD"'
     , '-f mp3 {url}'
   ]).format(
       title = shlex.quote(game["name"])

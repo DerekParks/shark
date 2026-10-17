@@ -165,3 +165,46 @@ def test_failed_enhance_leaves_no_partial(tmpdir, monkeypatch):
     enhance.enhance(str(recording), str(tmpdir.join("out.mp3")))
 
   assert tmpdir.listdir(lambda p: p.basename.startswith("out")) == []
+
+
+def test_recording_is_busy_while_a_partial_is_being_written(tmpdir, capsys):
+  busy = enhance.Recording(str(tmpdir))
+  assert not busy()
+
+  tmpdir.join("Avalanche-2026-10-16-1900.mp3.partial").write("x")
+  assert busy() and busy()
+  tmpdir.join("Avalanche-2026-10-16-1900.mp3.partial").remove()
+  assert not busy()
+
+  assert capsys.readouterr().out == "A game is recording, pausing\nRecording finished, resuming\n"
+
+
+def test_run_pausing_stops_the_process_while_busy(tmpdir, monkeypatch):
+  monkeypatch.setattr(enhance, "BUSY_POLL_SEC", 0.05)
+  pidfile, states = tmpdir.join("pid"), []
+
+  def busy():
+    if not pidfile.exists() or not pidfile.read().strip():
+      return False
+    state = open("/proc/%s/stat" % pidfile.read().strip()).read().split(")")[1].split()[0]
+    states.append(state)
+    return len(states) < 4
+
+  enhance.runPausing(["bash", "-c", "echo $$ > %s; exec sleep 0.5" % pidfile], busy)
+
+  assert states[2:4] == ["T", "T"]
+
+
+def test_run_pausing_raises_when_the_command_fails():
+  with pytest.raises(subprocess.CalledProcessError):
+    enhance.runPausing(["false"], enhance.idle)
+
+
+def test_analysis_waits_while_busy(tmpdir, monkeypatch):
+  monkeypatch.setattr(enhance, "BUSY_POLL_SEC", 0)
+  sf.write(str(tmpdir.join("r.wav")), tone(440, 2), SR)
+  answers = iter([True, True, False])
+
+  enhance.analyse(str(tmpdir.join("r.wav")), lambda: next(answers, False))
+
+  assert next(answers, "drained") == "drained"

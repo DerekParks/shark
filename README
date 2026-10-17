@@ -73,7 +73,7 @@ name, newest first, and the feed and dashboard serve that copy once it exists.
 It notches out mains hum, reduces noise with DeepFilterNet3 by at most 12 dB, and
 on recordings with no audio above about 12 kHz (AM, or old low-bitrate MP3s)
 regenerates the missing highs with LavaSR v2. The raw recording is kept. It
-runs on the CPU. Enhance a single file with
+runs on the CPU and pauses while a game is recording. Enhance a single file with
 `docker compose run --rm enhance python enhance.py <in.mp3> <out.mp3>`.
 
 

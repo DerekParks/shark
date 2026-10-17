@@ -9,9 +9,10 @@ Usage:
 Options:
   -h --help   Show this screen.
   --watch     Enhance each recording in <recordings> without a copy in <enhanced>, newest first, and keep watching.
+              Pauses while a game is recording into <recordings>.
 """
 
-import glob, math, os, queue, subprocess, tempfile, threading, time
+import glob, math, os, queue, signal, subprocess, tempfile, threading, time
 
 import numpy as np
 import soundfile as sf
@@ -44,7 +45,50 @@ def frames(seconds):
 HOP, CONTEXT, FADE = frames(30), frames(3), SR
 DFN_HOP, DFN_CONTEXT = frames(600), frames(15)
 WATCH_SEC = 60
+BUSY_POLL_SEC = 5
 PARTIAL = ".partial"
+
+def idle():
+  return False
+
+class Recording:
+  """True while the recorder is writing a game into recordings, logging each change."""
+
+  def __init__(self, recordings):
+    self.pattern = os.path.join(glob.escape(recordings), "*" + PARTIAL)
+    self.lock, self.was = threading.Lock(), False
+
+  def __call__(self):
+    now = bool(glob.glob(self.pattern))
+    with self.lock:
+      if now != self.was:
+        print("A game is recording, pausing" if now else "Recording finished, resuming", flush=True)
+        self.was = now
+    return now
+
+def waitWhile(busy):
+  while busy():
+    time.sleep(BUSY_POLL_SEC)
+
+def runPausing(cmd, busy):
+  """Run cmd to completion, stopping it while busy."""
+  proc = subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+  try:
+    while True:
+      try:
+        proc.wait(timeout=BUSY_POLL_SEC)
+        break
+      except subprocess.TimeoutExpired:
+        if busy():
+          proc.send_signal(signal.SIGSTOP)
+          waitWhile(busy)
+          proc.send_signal(signal.SIGCONT)
+  except BaseException:
+    proc.kill()
+    proc.wait()
+    raise
+  if proc.returncode:
+    raise subprocess.CalledProcessError(proc.returncode, cmd)
 
 def decode(path, filters=()):
   """Mono 48 kHz float blocks of a recording, after the given ffmpeg filters."""
@@ -88,9 +132,10 @@ class Analysis:
     ref = np.median(db[(self.freqs > 1000) & (self.freqs < 2500)])
     return float(self.freqs[np.nonzero((db > ref - EDGE_DB) & (self.freqs > 1000))[0][-1]])
 
-def analyse(path):
+def analyse(path, busy=idle):
   a = Analysis()
   for x in decode(path):
+    waitWhile(busy)
     a.add(x)
   return a
 
@@ -172,12 +217,12 @@ def crossover(low, high, hz, width=CROSSOVER_HZ):
   L, H = np.fft.rfft(low), np.fft.rfft(high)
   return np.fft.irfft(L + (H - L) * mask, n=len(low)).astype(np.float32)
 
-def deepFilter(workdir):
+def deepFilter(workdir, busy=idle):
   def run(x):
     src, out = os.path.join(workdir, "in.wav"), os.path.join(workdir, "out")
+    waitWhile(busy)
     sf.write(src, np.r_[x, np.zeros(DEEP_FILTER_PAD, np.float32)], SR, subtype="FLOAT")
-    subprocess.run([setting("SHARK_DEEP_FILTER"), "-a", str(ATTEN_LIM_DB), "-D", "-o", out, src],
-                   check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    runPausing([setting("SHARK_DEEP_FILTER"), "-a", str(ATTEN_LIM_DB), "-D", "-o", out, src], busy)
     y, sr = sf.read(os.path.join(out, "in.wav"), dtype="float32")
     assert sr == SR and len(y) >= len(x), (sr, len(y), len(x))
     return y[:len(x)]
@@ -187,7 +232,7 @@ def lavaModelDir():
   from huggingface_hub import snapshot_download
   return snapshot_download(LAVA_REPO, revision=LAVA_REVISION, allow_patterns=["enhancer_v2/*", "denoiser/*"])
 
-def lavaSR(edge):
+def lavaSR(edge, busy=idle):
   import torch
   from LavaSR.enhancer.linkwitz_merge import FastLRMerge
   from LavaSR.model import LavaEnhance2
@@ -195,6 +240,7 @@ def lavaSR(edge):
   lava = LavaEnhance2(lavaModelDir(), "cpu")
   lava.bwe_model.lr_refiner = FastLRMerge(device="cpu", cutoff=min(edge - LAVA_CUTOFF_MARGIN_HZ, LAVA_MAX_CUTOFF_HZ), transition_bins=1024)
   def run(x):
+    waitWhile(busy)
     x16 = torch.from_numpy(resample_poly(x, 1, 3).astype(np.float32))[None]
     with torch.no_grad():
       y = lava.enhance(x16, denoise=False).float().numpy().reshape(-1)
@@ -212,9 +258,9 @@ def encode(blocks, source, output):
   if proc.returncode:
     raise RuntimeError("ffmpeg couldn't encode %s" % output)
 
-def enhance(recording, output):
+def enhance(recording, output, busy=idle):
   t0 = time.monotonic()
-  a = analyse(recording)
+  a = analyse(recording, busy)
   hum, edge = a.hum(), a.edge()
   lava = edge < LAVA_MAX_EDGE_HZ
   print("%s: hum %s, band edge %.0f Hz, %s" % (os.path.basename(recording), hum or "none", edge,
@@ -222,9 +268,9 @@ def enhance(recording, output):
   partial = output + PARTIAL
   try:
     with tempfile.TemporaryDirectory() as workdir:
-      blocks = chunked(decode(recording, notches(hum)), deepFilter(workdir), DFN_HOP, DFN_CONTEXT)
+      blocks = chunked(decode(recording, notches(hum)), deepFilter(workdir, busy), DFN_HOP, DFN_CONTEXT)
       if lava:
-        blocks = chunked(threaded(blocks), lavaSR(edge))
+        blocks = chunked(threaded(blocks), lavaSR(edge, busy))
       encode(blocks, recording, partial)
     os.replace(partial, output)
   finally:
@@ -240,14 +286,14 @@ def watch(recordings, enhanced):
   os.makedirs(enhanced, exist_ok=True)
   for stale in glob.glob(os.path.join(glob.escape(enhanced), "*" + PARTIAL)):
     os.remove(stale)
-  failed = set()
+  failed, busy = set(), Recording(recordings)
   while True:
     todo = [p for p in pending(recordings, enhanced) if p not in failed]
     if not todo:
       time.sleep(WATCH_SEC)
       continue
     try:
-      enhance(todo[0], os.path.join(enhanced, os.path.basename(todo[0])))
+      enhance(todo[0], os.path.join(enhanced, os.path.basename(todo[0])), busy)
     except Exception as err:
       print("Couldn't enhance %s: %s" % (todo[0], err), flush=True)
       failed.add(todo[0])

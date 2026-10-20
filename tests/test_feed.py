@@ -130,6 +130,22 @@ def test_enhanced_copy_is_served_in_place_of_the_recording(tmpdir, mp3):
   assert [i.findtext("guid") for i in items] == ["Avalanche-2026-10-16-1900.mp3", "Broncos-2026-10-15-1815.mp3"]
 
 
+def test_trimmed_copy_is_served_ahead_of_the_enhanced_one(tmpdir, mp3):
+  mp3(tmpdir.join("Broncos-2026-10-15-1815.mp3"), 2, "Broncos at Chiefs", "Broncos")
+  mp3(tmpdir.join("Avalanche-2026-10-16-1900.mp3"), 2, "Avalanche vs. Penguins", "Avalanche")
+  enhanced, trimmed = tmpdir.mkdir("enhanced"), tmpdir.mkdir("trimmed")
+  mp3(enhanced.join("Broncos-2026-10-15-1815.mp3"), 3)
+  mp3(enhanced.join("Avalanche-2026-10-16-1900.mp3"), 3)
+  copy = mp3(trimmed.join("Broncos-2026-10-15-1815.mp3"), 1)
+
+  eps = feed.episodes(str(tmpdir), str(enhanced), str(trimmed))
+
+  assert [(e["url"], e["bytes"], e["seconds"]) for e in eps] == [
+    ("enhanced/Avalanche-2026-10-16-1900.mp3", enhanced.join("Avalanche-2026-10-16-1900.mp3").size(), 3),
+    ("trimmed/Broncos-2026-10-15-1815.mp3", copy.size(), 1),
+  ]
+
+
 def test_enhanced_copy_without_its_recording_is_not_an_episode(tmpdir, mp3):
   enhanced = tmpdir.mkdir("enhanced")
   mp3(enhanced.join("Broncos-2026-10-15-1815.mp3"), 3)

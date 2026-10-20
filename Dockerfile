@@ -19,7 +19,7 @@ RUN uv sync --frozen --no-dev
 COPY *.py teams.example.toml cover.jpg ./
 
 EXPOSE 8771
-CMD ["python", "web.py", "--host=0.0.0.0", "--schedule=/data/merged.csv", "--recordings=/data/out", "--enhanced=/data/enhanced", "--icecast=http://icecast:8000/live"]
+CMD ["python", "web.py", "--host=0.0.0.0", "--schedule=/data/merged.csv", "--recordings=/data/out", "--enhanced=/data/enhanced", "--trimmed=/data/trimmed", "--icecast=http://icecast:8000/live"]
 
 
 FROM scratch AS deep-filter-amd64

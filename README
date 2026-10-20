@@ -50,7 +50,8 @@ config/cover.jpg    Optional podcast cover; set SHARK_COVER=/config/cover.jpg.
 
   ICECAST_*_PASSWORD      Icecast passwords (required)
   COMPOSE_PROFILES        "recorder" to run the recorder (needs the shark),
-                          "enhance" to clean up recordings; comma-separated
+                          "enhance" to clean up recordings, "adcut" to cut
+                          the ad breaks out; comma-separated
   TZ                      Time zone for file names and episode dates (UTC)
   SHARK_FEED_TITLE        Feed and dashboard title (Shark Sports)
   SHARK_FEED_DESCRIPTION  Feed description
@@ -63,6 +64,11 @@ config/cover.jpg    Optional podcast cover; set SHARK_COVER=/config/cover.jpg.
   SHARK_STREAM_BITRATE    Live stream bitrate, kbps (64)
   PUID, PGID              User the containers run as (1000)
   AUDIO_GID, VIDEO_GID    Host groups owning /dev/snd and /dev/radio0 (29, 44)
+  SHARK_GPU_WORKER_URL    silence-of-the-spams GPU worker that finds the breaks
+  SHARK_ADCUT_MODEL       Sports BiLSTM-CRF on the worker
+                          (trained_models/sports/sports-text-v1.pt)
+  SHARK_ADCUT_EMBEDDER    Its embedder on the worker
+                          (/data/trained_models/bge-m3-ads-v1)
   ICECAST_PORT            Icecast admin port on 127.0.0.1 (8770)
 
 Recordings land in data/out as <team>-<date>-<HHMM>.mp3. A game the recorder
@@ -75,6 +81,17 @@ on recordings with no audio above about 12 kHz (AM, or old low-bitrate MP3s)
 regenerates the missing highs with LavaSR v2. The raw recording is kept. It
 runs on the CPU and pauses while a game is recording. Enhance a single file with
 `docker compose run --rm enhance python enhance.py <in.mp3> <out.mp3>`.
+
+Ad removal (profile adcut) sends each finished recording to a
+silence-of-the-spams GPU worker, which transcribes it, scans it for music and
+labels every line with a BiLSTM-CRF trained on sports radio. Ad lines within
+20 s of each other become one break, and breaks under 10 s are dropped.
+Sponsor lines the crew reads live stay in. The cut copy goes to data/trimmed
+with a short beep where each break was, cut from the enhanced copy when there
+is one and cut again when a newer enhanced copy appears. The feed serves it
+ahead of the enhanced and raw copies. The worker's transcript, music timeline
+and the breaks are kept in data/ads. Like the enhancer, it pauses while a game
+is recording.
 
 
 Development

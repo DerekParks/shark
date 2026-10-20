@@ -38,6 +38,11 @@ services:
     image: ghcr.io/derekparks/shark-enhance:latest
     profiles: [enhance]
 
+  adcut:
+    <<: *shark
+    profiles: [adcut]
+    command: ["nice", "-n", "19", "python", "adcut.py", "--watch", "/data/out", "/data/enhanced", "/data/ads", "/data/trimmed"]
+
   web:
     <<: *shark
     volumes:

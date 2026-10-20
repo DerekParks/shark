@@ -11,6 +11,9 @@ DEFAULTS = {
   "SHARK_FEED_DESCRIPTION": "Games recorded off the radio by a Griffin RadioSHARK.",
   "SHARK_FEED_AUTHOR": "Shark",
   "SHARK_DEEP_FILTER": "deep-filter",
+  "SHARK_GPU_WORKER_URL": "",
+  "SHARK_ADCUT_MODEL": "trained_models/sports/sports-text-v1.pt",
+  "SHARK_ADCUT_EMBEDDER": "/data/trained_models/bge-m3-ads-v1",
   "SHARK_COVER": os.path.join(os.path.dirname(os.path.abspath(__file__)), "cover.jpg"),
 }
 
